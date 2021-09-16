@@ -163,10 +163,23 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
+}
+.slider1 {
+    display: block;
     background: url('/w3_band_web/assets/img/slider1.jpg') top center / cover no-repeat;
 }
 
-#slider .text-content {
+.slider2 {
+    display: none;
+    background: url('/w3_band_web/assets/img/slider2.jpg') top center / cover no-repeat;
+}
+
+.slider3 {
+    display: none;
+    background: url('/w3_band_web/assets/img/slider3.jpg') top center / cover no-repeat;
+}
+
+.text-content {
     position: absolute;
     color: #fff;
     bottom: 47px;
@@ -175,12 +188,12 @@ html {
     transform: translateX(-50%);
 }
 
-#slider .text-content .text-title {
+.text-content .text-title {
     font-weight: 500;
     font-size: 24px;
 }
 
-#slider .text-content .text-description {
+.text-content .text-description {
     font-weight: 500;
     font-size: 15px;
     margin-top: 25px;

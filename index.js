@@ -76,3 +76,24 @@ var checkHoverBtnMenu = function(condition) {
         mobileMenu.classList.add('mobile-menu-btn-hover');
     }
 }
+
+var firstSlider = document.querySelector('.slider1');
+var secondSlider = document.querySelector('.slider2');
+var thirdSlider = document.querySelector('.slider3');
+var indexSlider = 1;
+
+setInterval(() => {
+    if(indexSlider === 1) {
+        thirdSlider.style.display = 'none';
+        firstSlider.style.display = 'block';
+        indexSlider++;
+    } else if (indexSlider === 2) {
+        firstSlider.style.display = 'none';
+        secondSlider.style.display = 'block';
+        indexSlider++;
+    } else {
+        secondSlider.style.display = 'none';
+        thirdSlider.style.display = 'block';
+        indexSlider = 1;
+    }
+}, 2000);
